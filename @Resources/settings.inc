@@ -3,7 +3,7 @@
 ; The other text options and AudioLevel options will work after a simple refresh.
 Bands=100
 Length=30
-String=[\x26Ab]
+String=[\x0d9e]
 ; You can use any character(s) for the visualizer string.
 ; For non ASCII characters, find the hex code of the character:
 ; https://en.wikipedia.org/wiki/List_of_Unicode_characters
