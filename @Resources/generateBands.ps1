@@ -47,9 +47,8 @@ for ($i = 0; $i -lt $B; $i++) {
     # Peaks
     if (($i -gt 0) -and ($i -lt $B -1)) {
         $j = $i + 1
-        $peakShapes += "Shape$($j) = Rectangle ([xCalc] * $($j)),([pyCalc$($j)]),[xCalc],([amogus:H] - [yKerning]) | Extend Styles`n"
+        $peakShapes += "Shape$($j) = Rectangle ([xCalc] * $($i)),([pyCalc$($i)]),[xCalc],([amogus:H] - [yKerning]) | Extend Styles`n"
     }
-
 
 }
 
@@ -116,12 +115,12 @@ Parent=MeasurePeaks
 Type=Band
 BandIdx=$($i + 1)
 AverageSize=#AverageSize#
-UpdateDivider=2
+UpdateDivider=#PeakUpdateDivider#
 [pyCalc$i]
 Measure=Calc
-Formula=[grid:H] - (([amogus:H] - [yKerning]) * Floor(pBand$i * $($Length - 1)))
+Formula=[grid:H] - (([amogus:H] - [yKerning]) * (Floor(pBand$i * $($Length - 1)) + 1))
 DynamicVariables=1
-UpdateDivider=2
+UpdateDivider=#PeakUpdateDivider#
 
 "@
 
