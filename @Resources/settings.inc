@@ -12,14 +12,11 @@ String=[\x26Ab]
 
 ; Other text options
 FontFace=
-FontSize=8
+FontSize=10
 FontColor=255,255,255
 PeakColor=255,255,255,150
 BackgroundColor=0,0,0,1
 AccurateText=1
-
-HidePeaks=0
-PeakUpdateDivider=2
 
 ; AudioLevel options
 ; 48000 khz audio device
@@ -33,24 +30,30 @@ FreqMin=20
 FreqMax=18000
 AverageSize=2
 
+; Peak settings
+HidePeaks=1
+PeakUpdateDivider=2
 PeakFFTAttack=0
 PeakFFTDecay=250
 
+; inline setting variables
+Gradient=GradientColor | 0 | 88EC78 ; 0.0 | F9BA30 ; 0.5 | FC3B4C ; 1
+PeakGradient=GradientColor | 0 | 88EC7869 ; 0.0 | F9BA3069 ; 0.5 | FC3B4C69 ; 1
+
 ; InlineSettings
-; These are commented because they will cause a performance hit.
-InlineSetting=GradientColor | 0 | 88EC78 ; 0.0 | F9BA30 ; 0.5 | FC3B4C ; 1
+InlineSetting=#Gradient#
 InlinePattern=.*
-;InlineSetting2=
-;InlinePattern2=.*
+;InlineSetting2=Size | 20
+;InlinePattern2=(\n)
 ;InlineSetting3=
-;InlinePattern2=.*
+;InlinePattern3=.*
 ;InlineSetting4=
 ;InlinePattern4=.*
 ;InlineSetting5=
 ;InlinePattern5=.*
 
-
-PeakInlineSetting=GradientColor | 0 | 88EC7869 ; 0.0 | F9BA3069 ; 0.5 | FC3B4C69 ; 1
+; Peak InlineSettings
+PeakInlineSetting=#PeakGradient#
 PeakInlinePattern=#InlinePattern#
 ;PeakInlineSetting2=#InlineSetting2#
 ;PeakInlinePattern2=#InlinePattern2#
