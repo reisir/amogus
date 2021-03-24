@@ -31,7 +31,7 @@ FreqMax=18000
 AverageSize=2
 
 ; Peak settings
-HidePeaks=1
+HidePeaks=0
 PeakUpdateDivider=2
 PeakFFTAttack=0
 PeakFFTDecay=250
@@ -43,8 +43,8 @@ PeakGradient=GradientColor | 0 | 88EC7869 ; 0.0 | F9BA3069 ; 0.5 | FC3B4C69 ; 1
 ; InlineSettings
 InlineSetting=#Gradient#
 InlinePattern=.*
-;InlineSetting2=Size | 20
-;InlinePattern2=(\n)
+;InlineSetting2=CharacterSpacing | -10 | -10
+;InlinePattern2=\n
 ;InlineSetting3=
 ;InlinePattern3=.*
 ;InlineSetting4=
