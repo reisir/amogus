@@ -83,7 +83,12 @@ $($peakshapes)
 ## functions ##
 ###############
 
-function New-Band($i) {
+function New-Band {
+    param (
+        [Parameter()]
+        [int]
+        $i
+    )
     # $RmAPI.Log("Making band$($i).inc")
 
     $band = @"
@@ -104,7 +109,12 @@ DynamicVariables=1
     return $band
 }
 
-function New-PeakBand($i) {
+function New-PeakBand {
+    param (
+        [Parameter()]
+        [int]
+        $i
+    )
     # $RmAPI.Log("Making peakBand$($i).inc")
 
     $band = @"
