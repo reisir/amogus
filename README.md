@@ -2,33 +2,33 @@
 
 ![Amogus](https://i.imgur.com/sh4RmUw.gif)
 
-Text based Rainmeter Visualizer. Can use any combination of ASCII characters and (4-digit) unicode character codes to form a bar.
+Text based Rainmeter Visualizer. Can use any (4-digit) unicode characters to form a bar.
 
 [List of Unicode characters](https://en.wikipedia.org/wiki/List_of_Unicode_characters)
 
-Wikipedia lists the codes as U+0000, for rainmeter it's [\x0000]
+Wikipedia lists the codes as U+0000, just paste the four hex digits into the settings skin.
 
 ## Example unicode hex codes:
- * `ඞ` Amogus [\x0d9e]
- * `⛏` Minecraft [\x26Cf]
- * `⌔` Diamond [\x2314]
- * `◾` Small Square [\x25FE]
- * `◼` Medium Square [\x25FC]
- * `■` Large Square [\x25A0]
- * `⌓` Semi-Circle [\x2313]
- * `○` Small Circle [\x25CB]
- * `◯` Large Circle [\x25EF]
- * `●` Small Filled Circle [\x25CF]
- * `⚫` Large Filled Circle [\x26Ab]
- * `◊` Lozenge [\x25CA]
- * `⛛` Triangle [\x26DB]
- * `♥` Heart [\x2665]
+ * `ඞ` Amogus `0d9e`
+ * `⛏` Minecraft `26Cf`
+ * `⌔` Diamond `2314`
+ * `◾` Small Square `25FE`
+ * `◼` Medium Square `25FC`
+ * `■` Large Square `25A0`
+ * `⌓` Semi-Circle `2313`
+ * `○` Small Circle `25CB`
+ * `◯` Large Circle `25EF`
+ * `●` Small Filled Circle `25CF`
+ * `⚫` Large Filled Circle `26Ab`
+ * `◊` Lozenge `25CA`
+ * `⛛` Triangle `26DB`
+ * `♥` Heart `2665`
 
 ### Notice:
 
 Some characters are smaller than others.
 
-Small font sizes may cause the visualizer bars to clip incorrectly.
+Small and un-even font sizes may cause the visualizer bars to clip around the edges.
 
-### TODO:
- - [ ] Peak n. 0 clipping on the bottom
+It's generally better to have fewer large bars than many small bars.
+

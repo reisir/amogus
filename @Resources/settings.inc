@@ -4,14 +4,15 @@
 ; 48000 / 60 (fps) = 800
 FFTSize=2048
 FFTOverlap=(#FFTSize# - 800)
+;this might not make sense
 
 ; Eldog — Today at 01:55
 ; have you considered: gradients are extremely expensive to update every tic
 ; maybe don't
 
 ; inline setting variables
-Gradient=GradientColor | 0 | 88EC78 ; 0.0 | F9BA30 ; 0.5 | FC3B4C ; 1
-PeakGradient=GradientColor | 0 | 88EC7869 ; 0.0 | F9BA3069 ; 0.5 | FC3B4C69 ; 1
+;Gradient=GradientColor | 0 | 88EC78 ; 0.0 | F9BA30 ; 0.5 | FC3B4C ; 1
+;PeakGradient=GradientColor | 0 | 88EC7869 ; 0.0 | F9BA3069 ; 0.5 | FC3B4C69 ; 1
 
 ; InlineSettings
 ;InlineSetting=#Gradient#

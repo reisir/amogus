@@ -8,7 +8,7 @@ BackgroundModifiers=Fill Color #s_LeftPanelBackgroundColor# | StrokeWidth 0
 
 [LeftPanelContainer]
 Meter=Shape
-Shape=Rectangle 0,0,(#s_LeftPanelW#),(#s_PanelH#) | Extend PanelModifiers
+Shape=Rectangle 0,0,(#s_LeftPanelW#),(#s_PanelH#),[#s_BackgroundRounding] | Extend PanelModifiers
 PanelModifiers=Fill Color 255,255,255 | StrokeWidth 0
 MouseScrollDownAction=[!EnableMeasure "ScrollDownLeftPanel"][!UpdateMeasure "ScrollDownLeftPanel"]
 MouseScrollUpAction=[!EnableMeasure "ScrollUpLeftPanel"][!UpdateMeasure "ScrollUpLeftPanel"]
@@ -16,7 +16,7 @@ MouseActionCursor=0
 
 [RightPanelContainer]
 Meter=Shape
-Shape=Rectangle 0,0,(#s_RightPanelW#),(#s_PanelH#) | Extend PanelModifiers
+Shape=Rectangle 0,0,(#s_RightPanelW#),(#s_PanelH#),(#s_BackgroundRounding#) | Extend PanelModifiers
 PanelModifiers=Fill Color 255,255,255 | StrokeWidth 0
 X=(#s_LeftPanelW#)
 MouseScrollDownAction=[!EnableMeasure "ScrollDownRightPanel"][!UpdateMeasure "ScrollDownRightPanel"]
@@ -30,6 +30,7 @@ Line=StrokeWidth 0
 Square=Fill Color [#s_SelectedColor]
 X=(-[#s_SelectorWidth])
 Y=([ListIcon[#s_CurrentCategory]:Y])
+Container=LeftPanelContainer
 DynamicVariables=1
 
 ; Scroll indicator. This can be optimized a lot
@@ -67,10 +68,10 @@ Meter=Shape
 Shape=Rectangle 0,0,[#s_ScrollIndicatorWidth],[#s_ScrollIndicatorMaxHeight],[#s_ScrollIndicatorRounding] | Fill Color [#s_ScrollIndicatorBackgroundColor] | StrokeWidth 0
 Shape2=Rectangle 0,[CategoryCurrentScroll],[#s_ScrollIndicatorWidth],[ScrollerHeight],[#s_ScrollIndicatorRounding] | Fill Color [#s_ScrollIndicatorColor] | StrokeWidth 0
 Y=[#s_scrollIndicatorYPadding]
-X=(([#s_LeftPanelW] + [#s_RightPanelW]) - ([#s_ScrollIndicatorWidth] + [#s_scrollIndicatorXPadding]))
+X=([#s_RightPanelW] - ([#s_ScrollIndicatorWidth] + [#s_scrollIndicatorXPadding]))
+Hidden=([ScrollerHeight] > 0) ? 0 : 1
+Container=RightPanelContainer
 DynamicVariables=1
-Hidden=([MaxScroll] > ([#s_PanelH] - [#s_ScrollTreshold])) ? 0 : 1
-
 
 [LeftPanel]
 Container=LeftPanelContainer
@@ -84,6 +85,7 @@ W=0
 X=0
 SolidColor=0,0,0,0
 DynamicVariables=1
+
 [LastITem]
 H=0
 W=0
