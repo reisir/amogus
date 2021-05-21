@@ -9,8 +9,6 @@ FFTOverlap=(#FFTSize# - 800)
 
 ; From ASV
 UpdateRate=16
-MaxSensitivity=35
-MinSensitivity=6
 BlurRadius=2
 WindowFunction=Kaiser
 

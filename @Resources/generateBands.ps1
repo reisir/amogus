@@ -67,7 +67,7 @@ y=0
 Meter=Shape
 DynamicVariables=1
 Styles=StrokeWidth 0 | Fill Color 255,255,0
-Shape=Rectangle 0,([pyCalc0]),[xCalc],([amogus:H] + [yKerning]) | Extend Styles
+Shape=Rectangle 0,([pyCalc0]),[xCalc],([amogus:H] - [yKerning]) | Extend Styles
 $($peakshapes)
 
 "@

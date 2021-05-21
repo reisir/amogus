@@ -31,11 +31,15 @@ String=[\x[#stringCode]]
 ;?Info | Name | Link 1 | Description List of character codes:
 Unicode character code list=https://en.wikipedia.org/wiki/List_of_Unicode_characters
 ;?Integer | Description The size of the [#String]'s | Name Size
-FontSize=8
+FontSize=10
 ;? | Name Font
 FontFace=Segoe UI
 
-;@Topic | Name Audio Level | Icon [\xE767]
+;@Topic | Name Audio Analyzer | Icon [\xE767]
+;?Integer | Name Max Sensitivity
+MaxSensitivity=35
+;?Integer | Name Min Sensitivity
+MinSensitivity=6
 
 ;@ | Name Main
 ;?Integer | Name Visualizer attack
@@ -47,9 +51,7 @@ Sensitivity=40
 ;?Integer | Name Minimum frequency
 FreqMin=20
 ;?Integer | Name Maximum frequency
-FreqMax=18000
-;?Integer | Name Smoothing level (AverageSize)
-AverageSize=2
+FreqMax=16000
 
 ;@ | Name Peaks
 ;?Toggle | Name Show peaks

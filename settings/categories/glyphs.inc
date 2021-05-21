@@ -31,8 +31,7 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "0d9E" "#SKINSPATH#am
 X=0r
 Y=0r
 MeterStyle=RightPanel | Glyph
-TooltipTitle=AMOGUS
-TooltipText=amogus
+TooltipText=AMOGUS
 [Glyph1]
 Meter=String
 Text=[\x26CF]
@@ -40,6 +39,7 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "26CF" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
+TooltipText=Pickaxe
 [Glyph2]
 Meter=String
 Text=[\x2314]
@@ -47,6 +47,7 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "2314" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
+TooltipText=Diamond
 [Glyph3]
 Meter=String
 Text=[\x25FE]
@@ -54,6 +55,7 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25FE" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
+TooltipText=Spaced square
 [Glyph4]
 Meter=String
 Text=[\x25FC]
@@ -61,6 +63,7 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25FC" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
+TooltipText=Full square
 [Glyph5]
 Meter=String
 Text=[\x25A0]
@@ -68,13 +71,33 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25A0" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
-[Glyph6]
+TooltipText=Thicc square
+
+; [Glyph6]
+; Meter=String
+; Text=[\x2313]
+; LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "2313" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+; X=[#s_VariableXPadding]
+; Y=0R
+; MeterStyle=RightPanel | Glyph
+
+[Glyph11]
 Meter=String
-Text=[\x2313]
-LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "2313" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+Text=[\x2662]
+LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "2662" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
 X=[#s_VariableXPadding]
 Y=0R
 MeterStyle=RightPanel | Glyph
+TooltipText=Chevron
+
+[Glyph18]
+Meter=String
+Text=[\x2666]
+LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "2666" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+X=0R
+Y=0r
+MeterStyle=RightPanel | Glyph
+TooltipText=Filled chevron
 [Glyph7]
 Meter=String
 Text=[\x25CB]
@@ -82,13 +105,7 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25CB" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
-[Glyph8]
-Meter=String
-Text=[\x25EF]
-LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25EF" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
-X=0R
-Y=0r
-MeterStyle=RightPanel | Glyph
+TooltipText=Small circle
 [Glyph9]
 Meter=String
 Text=[\x25CF]
@@ -96,6 +113,15 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25CF" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
+TooltipText=Small filled circle
+[Glyph8]
+Meter=String
+Text=[\x25EF]
+LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25EF" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+X=0R
+Y=0r
+MeterStyle=RightPanel | Glyph
+TooltipText=Circle
 [Glyph10]
 Meter=String
 Text=[\x26AB]
@@ -103,13 +129,9 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "26AB" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
-[Glyph11]
-Meter=String
-Text=[\x25CA]
-LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "25CA" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
-X=0R
-Y=0r
-MeterStyle=RightPanel | Glyph
+TooltipText=Filled circle
+
+
 [Glyph12]
 Meter=String
 Text=[\x26DB]
@@ -117,6 +139,7 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "26DB" "#SKINSPATH#am
 X=[#s_VariableXPadding]
 Y=0R
 MeterStyle=RightPanel | Glyph
+TooltipText=Triangle
 [Glyph13]
 Meter=String
 Text=[\x2665]
@@ -124,3 +147,45 @@ LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "2665" "#SKINSPATH#am
 X=0R
 Y=0r
 MeterStyle=RightPanel | Glyph
+TooltipText=Heart
+
+[Glyph14]
+Meter=String
+Text=[\x26A1]
+LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "26A1" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+X=0R
+Y=0r
+MeterStyle=RightPanel | Glyph
+TooltipText=Lightning bolt
+
+
+[Glyph15]
+Meter=String
+Text=[\x26CA]
+LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "26CA" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+X=0R
+Y=0r
+MeterStyle=RightPanel | Glyph
+TooltipText=Shield
+
+
+[Glyph16]
+Meter=String
+Text=[\x266B]
+LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "266B" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+X=0R
+Y=0r
+MeterStyle=RightPanel | Glyph
+TooltipText=Eight note
+
+
+[Glyph17]
+Meter=String
+Text=[\x26DA]
+LeftMouseUpAction=[!WriteKeyValue "Variables" "stringCode" "26DA" "#SKINSPATH#amogus\@Resources\userSettings.inc"][!Refresh][#s_OnChangeAction]
+X=0R
+Y=0r
+MeterStyle=RightPanel | Glyph
+TooltipText=Miscellanious symbol
+
+
