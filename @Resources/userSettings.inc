@@ -26,7 +26,7 @@ PeakColor=255,255,255,150
 
 ;@ | Name Glyph | Icon [\xE986]
 ;?String | DefaultValue [\x26Ab] | Name String | Description Unicode character code used to generate the visualizer
-stringCode=0d9E
+stringCode=26AB
 String=[\x[#stringCode]]
 ;?Info | Name | Link 1 | Description List of character codes:
 Unicode character code list=https://en.wikipedia.org/wiki/List_of_Unicode_characters
