@@ -26,7 +26,7 @@ PeakColor=255,255,255,150
 
 ;@ | Name Glyph | Icon [\xE986]
 ;?String | DefaultValue [\x26Ab] | Name String | Description Unicode character code used to generate the visualizer
-stringCode=26AB
+stringCode=0d9E
 String=[\x[#stringCode]]
 ;?Info | Name | Link 1 | Description List of character codes:
 Unicode character code list=https://en.wikipedia.org/wiki/List_of_Unicode_characters
@@ -56,7 +56,7 @@ AverageSize=2
 s_Peaks=1
 HidePeaks=(1 - [#s_Peaks])
 ;?Integer | Name Peak attack 
-PeakFFTAttack=300
+PeakFFTAttack=0
 ;?Integer | Name Peak decay
 PeakFFTDecay=500
 ;?Integer | Name Peak update divider

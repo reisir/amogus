@@ -94,11 +94,13 @@ function New-Band {
     $band = @"
 [sBand$i]
 Measure=Plugin
-Plugin=AudioLevel
-Parent=MeasureAudio
-Type=Band
-BandIdx=$($i + 1)
-AverageSize=#AverageSize#
+Plugin=AudioAnalyzer
+Parent=MeasureAudioAnalyzer
+Type=Child
+Index=$($i + 1)
+Channel=Auto
+HandlerName=MainFinalOutput
+
 [yCalc$i]
 Measure=Calc
 Formula=[grid:H] - (([amogus:H] - [yKerning]) * Floor(sBand$i * $($Length - 1)))
@@ -120,11 +122,12 @@ function New-PeakBand {
     $band = @"
 [pBand$i]
 Measure=Plugin
-Plugin=AudioLevel
-Parent=MeasurePeaks
-Type=Band
-BandIdx=$($i + 1)
-AverageSize=#AverageSize#
+Plugin=AudioAnalyzer
+Parent=MeasureAudioAnalyzer
+Type=Child
+Index=$($i + 1)
+Channel=Auto
+HandlerName=PeakFinalOutput
 UpdateDivider=#PeakUpdateDivider#
 [pyCalc$i]
 Measure=Calc
@@ -139,7 +142,7 @@ UpdateDivider=#PeakUpdateDivider#
 
 
 function New-String {
-    $RmAPI.Log('Constructing string.inc')
+    # $RmAPI.Log('Constructing string.inc')
 
     $s = ""
     $total = $Length * $B
