@@ -6,6 +6,15 @@ FFTSize=2048
 FFTOverlap=(#FFTSize# - 800)
 ;this might not make sense
 
+
+; From ASV
+UpdateRate=16
+MaxSensitivity=35
+MinSensitivity=6
+BlurRadius=2
+WindowFunction=Kaiser
+
+
 ; Eldog — Today at 01:55
 ; have you considered: gradients are extremely expensive to update every tic
 ; maybe don't
